@@ -1,0 +1,58 @@
+@use '../vars';
+
+.homeContainer{
+
+  .articlesContainer{
+    display: flex;
+    flex-direction: column;
+  
+    padding: 0 20px;
+    > h1{
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: vars.$dark-2;
+
+      padding: 20px 0;
+    }
+  }
+
+  aside{
+    display: none;
+  }
+  
+}
+
+@media (min-width: vars.$medium) {
+  .homeContainer{
+    max-width: 1100px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    aside{
+      display: block;
+      > h1{
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: vars.$dark-2;
+        text-transform: uppercase;
+  
+        padding: 20px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: vars.$large) {
+  .homeContainer{
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: vars.$extra-large) {
+  .homeContainer{
+    max-width: 1300px;
+  }
+}

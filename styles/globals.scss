@@ -13,16 +13,17 @@ body {
 
 body,
 input,
-button {
-  font: 400 16px "Roboto", sans-serif;
-}
-
+button,
 h1,
 h2,
 h3,
 h4,
-p {
-  font: 400 16px "Ubuntu", sans-serif;
+span {
+  font: 400 16px "Roboto", sans-serif;
+}
+
+p{
+  font-family: "Roboto Slab", sans-s;
 }
 
 button {

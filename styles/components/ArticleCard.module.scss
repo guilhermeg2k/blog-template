@@ -1,0 +1,57 @@
+@use "../vars";
+
+.articleCard {
+  display: flex;
+  flex-direction: column;
+
+  div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+
+    img{
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+
+    h1{
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: vars.$dark-2;
+      padding: 10px 0;
+    }
+
+    span {
+      align-self: flex-end;
+      margin: 5px 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+@media (min-width: vars.$medium) {
+  .articleCard {
+    flex-direction: row;
+
+    div{
+      width: 100%;
+      margin-right: 15px;
+      img{
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+
+    article{
+      p{
+        flex-grow: 1;
+      }
+    }
+  } 
+}
