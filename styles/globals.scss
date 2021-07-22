@@ -35,17 +35,9 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: vars.$large) {
-  html,
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 90%;
-  }
-}
 
-@media (max-width: vars.$medium) {
+
+@media (min-width: vars.$medium) {
   html,
   h1,
   h2,
@@ -55,7 +47,17 @@ a {
   }
 }
 
-@media (max-width: vars.$small) {
+@media (min-width: vars.$large) {
+  html,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: vars.$small) {
   html {
     font-size: 85%;
   }
@@ -74,4 +76,19 @@ ul, ol{
 
 .hidden{
   display: none;
+}
+
+.button{
+  display: inline;
+  padding: 14px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  font-size: 0.9rem;
+
+  background-color: vars.$dark;
+
+  cursor: pointer;
+  border-radius: 2px;
 }

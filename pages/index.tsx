@@ -2,6 +2,7 @@ import styles from "../styles/pages/index.module.scss";
 import Header from "../components/Header";
 import ArticleCard from "../components/ArticleCard";
 import SocialMediasCard from "../components/SocialMediasCard";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -23,12 +24,16 @@ export default function Home() {
               />)
             }
           </div>
+          <div className="button">
+            Postagens Mais Antigas
+          </div>
         </main>
         <aside>
           <h1>Follow us</h1>
           <SocialMediasCard />
         </aside>
       </div>
+      <Footer/>
     </>
   )
 }
