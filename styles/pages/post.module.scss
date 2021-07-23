@@ -1,8 +1,8 @@
 @use '../vars';
 
-.homeContainer {
+.postContainer {
   height: 100%;
-  .articlesContainer {
+  .articleContainer {
     display: flex;
     flex-direction: column;
     background-color: vars.$white;
@@ -10,6 +10,12 @@
     padding-bottom: 20px;
     border-radius: 2px;
     height: auto;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
     > div {
       &:last-child {
         height: 100%;
@@ -34,15 +40,16 @@
 }
 
 @media (min-width: vars.$medium) {
-  .homeContainer {
+  .postContainer {
     max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 40px;
-    .articlesContainer {
+    .articleContainer {
       margin-top: 30px;
     }
+
     aside {
       display: block;
       margin-top: 30px;
@@ -62,13 +69,13 @@
 }
 
 @media (min-width: vars.$large) {
-  .homeContainer {
+  .postContainer {
     max-width: 1200px;
   }
 }
 
 @media (min-width: vars.$extra-large) {
-  .homeContainer {
+  .postContainer {
     max-width: 1300px;
   }
 }
