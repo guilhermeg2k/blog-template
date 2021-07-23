@@ -4,6 +4,7 @@ This is a simple blog template that i created to practice react and next.js
 
 It was created using create-next-app with typescript and sass
 
+You can see the figma prototype [here](https://www.figma.com/file/qygjAGzBv1Ixzl6a9LAPuf/simple_blog_template?node-id=0%3A1)
 ## Preview
 
 - [Click here to preview](https://blog-template-guilhermeg2k.vercel.app/)
