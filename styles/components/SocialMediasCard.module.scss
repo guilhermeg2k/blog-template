@@ -1,8 +1,13 @@
 @use "../vars";
 
 .socialMediasCard {
+
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.4);
+
+  a{
+    cursor: pointer;
+  }
 
   .socialMedia {
     &:last-child {

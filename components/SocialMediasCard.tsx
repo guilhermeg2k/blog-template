@@ -13,7 +13,7 @@ export default function SocialMediasCard(){
           FACEBOOK
         </td>
         <td>
-        <a href="/">Like</a>
+        <a>Like</a>
         </td>
       </tr>
 
@@ -25,7 +25,7 @@ export default function SocialMediasCard(){
           Twitter
         </td>
         <td>
-        <a href="/">Follow</a>
+        <a>Follow</a>
         </td>
       </tr>
 
@@ -37,7 +37,7 @@ export default function SocialMediasCard(){
           Pinterest
         </td>
         <td>
-          <a href="/">Follow</a>
+          <a>Follow</a>
         </td>
       </tr>
       
@@ -49,7 +49,7 @@ export default function SocialMediasCard(){
           Instagram
         </td>
         <td>
-          <a href="/">Follow</a>
+          <a>Follow</a>
         </td>
       </tr>
     </table>
