@@ -1,6 +1,6 @@
 @use "../vars";
 
-.footerContainer{
+.footerContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,27 +15,26 @@
   background-color: vars.$dark;
   text-align: center;
   padding: 20px;
-    h1{
-      display: none;
-    }
-    p{
-      font-family: "Roboto", sans-serif;
-    }
+  h1 {
+    display: none;
+  }
+  p {
+    font-family: "Roboto", sans-serif;
+  }
 }
 
 @media (min-width: vars.$medium) {
-  .footerContainer{
-
+  .footerContainer {
     grid-template-columns: 1fr 2fr;
     padding: 50px 100px;
-    h1{
+    h1 {
       display: inline;
       font-size: 40px;
       font-weight: bold;
       margin-right: 100px;
       min-width: 313px;
     }
-    p{
+    p {
       text-align: left;
       max-width: 720px;
     }

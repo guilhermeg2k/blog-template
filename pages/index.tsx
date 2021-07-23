@@ -25,7 +25,7 @@ export default function Home() {
             }
           </div>
           <div className="button">
-            Postagens Mais Antigas
+            Old posts
           </div>
         </main>
         <aside>

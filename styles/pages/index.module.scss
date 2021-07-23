@@ -1,8 +1,8 @@
 @use '../vars';
 
-.homeContainer{
+.homeContainer {
   height: 100%;
-  .articlesContainer{
+  .articlesContainer {
     display: flex;
     flex-direction: column;
     background-color: vars.$white;
@@ -10,15 +10,15 @@
     padding-bottom: 20px;
     border-radius: 2px;
     height: auto;
-    > div{
-      &:last-child{
+    > div {
+      &:last-child {
         height: 100%;
         margin-top: 10px;
         align-self: flex-end;
       }
     }
 
-    > h1{
+    > h1 {
       font-size: 1.1rem;
       font-weight: bold;
       text-transform: uppercase;
@@ -28,34 +28,33 @@
     }
   }
 
-  aside{
+  aside {
     display: none;
   }
-  
 }
 
 @media (min-width: vars.$medium) {
-  .homeContainer{
+  .homeContainer {
     max-width: 1100px;
     margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 40px;
-    .articlesContainer{
+    .articlesContainer {
       margin-top: 30px;
     }
-    aside{
+    aside {
       display: block;
       margin-top: 30px;
       background-color: vars.$white;
       padding: 0 20px;
       height: 270px;
-      > h1{
+      > h1 {
         font-size: 1.1rem;
         font-weight: bold;
         color: vars.$dark-2;
         text-transform: uppercase;
-  
+
         padding: 20px 0;
       }
     }
@@ -63,13 +62,13 @@
 }
 
 @media (min-width: vars.$large) {
-  .homeContainer{
+  .homeContainer {
     max-width: 1200px;
   }
 }
 
 @media (min-width: vars.$extra-large) {
-  .homeContainer{
+  .homeContainer {
     max-width: 1300px;
   }
 }
