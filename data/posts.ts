@@ -1,6 +1,5 @@
 export function getPost(id: number) {
-  let post = Posts.find(post => post.id == id);
-  return post;
+  return Posts.find(post => post.id == id);
 }
 
 export const Posts = [

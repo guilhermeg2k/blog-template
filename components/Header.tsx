@@ -11,7 +11,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <nav className={styles.mobileNav}>
-        <h1>BLOG TEMPLATE</h1>
+        <Link href="/">
+          <a><h1>BLOG TEMPLATE</h1></a>
+        </Link>
         <MenuIcon onClick={toggleMobileMenuLinks} />
       </nav>
       {
@@ -34,7 +36,9 @@ export default function Header() {
       }
 
       <div>
-        <h1>BLOG TEMPLATE</h1>
+        <Link href="/">
+          <a><h1>BLOG TEMPLATE</h1></a>
+        </Link>
       </div>
       <nav className={styles.desktopNav}>
         <div className={styles.desktopNavWrapper}>
